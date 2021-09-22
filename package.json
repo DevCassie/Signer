@@ -1,0 +1,28 @@
+{
+  "name": "signer",
+  "version": "0.0.1",
+  "description": "Leer gebarentaal op een avontuurlijke manier!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo say hi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevCassie/Signer.git"
+  },
+  "keywords": [
+    "Gebarentaal"
+  ],
+  "author": "Cas Martens",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DevCassie/Signer/issues"
+  },
+  "homepage": "https://github.com/DevCassie/Signer#readme",
+  "dependencies": {
+    "@ionic/react": "^5.8.0"
+  },
+  "devDependencies": {
+    "@ionic/react-router": "^5.8.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Signer",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}
