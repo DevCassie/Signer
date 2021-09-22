@@ -1,0 +1,7 @@
+{
+  "name": "Signer",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
