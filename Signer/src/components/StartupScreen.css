@@ -1,0 +1,12 @@
+.container.flex {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.button.start {
+    font-family: "Antic Slab", serif;
+    text-transform: none;
+}

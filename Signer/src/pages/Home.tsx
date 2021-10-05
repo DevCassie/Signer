@@ -1,12 +1,12 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonContent, IonPage, } from '@ionic/react';
+import StartScreen from '../components/StartupScreen';
 import './Home.css';
 
 const Home: React.FC = () => {
   return (
-    <IonPage>
+    <IonPage title="Welkom!">
       <IonContent fullscreen>
-        <ExploreContainer />
+        <StartScreen />
       </IonContent>
     </IonPage>
   );
