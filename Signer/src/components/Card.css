@@ -1,0 +1,8 @@
+.container.card {
+    background-color: var(--ion-color-secondary);
+    border-radius: 10px;
+    box-shadow: none;
+    padding: 20px;
+    width: auto;
+    margin: 20px 0 20px 0;
+}

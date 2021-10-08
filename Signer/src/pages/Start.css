@@ -10,3 +10,12 @@
     font-family: "Antic Slab", serif;
     text-transform: none;
 }
+
+.text-align-center {
+    text-align: center;
+}
+
+.yellow-background {
+    background-color: var(--ion-color-secondary);
+    border-radius: 5px;
+}
