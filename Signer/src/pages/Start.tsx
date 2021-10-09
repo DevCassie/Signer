@@ -13,8 +13,8 @@ const Start: React.FC = () => {
             </svg>
           </div>
           <div className="container flex">
-            <Button className="button start ion-margin-bottom" size="large" href="/login" text="Inloggen" />
-            <Button className="button start" size="large" href="/registreren" text="Account aanmaken" />
+            <Button className="start ion-margin-bottom" size="large" href="/login" text="Inloggen" />
+            <Button className="start" size="large" href="/registreren" text="Account aanmaken" />
           </div>  
         </div>
       </IonContent>

@@ -11,34 +11,31 @@ interface ContainerProps { }
 const StartScreen: React.FC<ContainerProps> = () => {
   return (
     <IonContent>
+      <div className="container icon">
+      </div>
       <div className="container flex ion-padding text-align-center">
           <h1><IonText color="light">Welkom</IonText></h1>
-          <IonText color="light">Maak je account aan.</IonText>
-        <div className="container icon">
-          <svg>
-            <circle cx="50" cy="50" r="40" stroke="none" stroke-width="0" fill="#FCFF4B"></circle>
-          </svg>
-        </div>
+          <IonText color="light" className="subheading">Maak je account aan</IonText>
         <Card>
           <IonGrid>
             <IonRow>
               <IonCol>
-                <IconInput placeholder="Gebruikersnaam" color="light" type="text" />
+                <IconInput placeholder="Gebruikersnaam" color="light" type="text" iconclassName="fas fa-user" />
               </IonCol>
             </IonRow>
             <IonRow>
               <IonCol>
-                <IconInput placeholder="Email" color="light" type="email"></IconInput>
+                <IconInput placeholder="Email" color="light" type="email" iconclassName="fas fa-envelope"></IconInput>
               </IonCol>
             </IonRow>
             <IonRow>
               <IonCol>
-                <IconInput placeholder="Wachtwoord" color="light" type="password"></IconInput>
+                <IconInput placeholder="Wachtwoord" color="light" type="password" iconclassName="fas fa-key"></IconInput>
               </IonCol>
             </IonRow>
           </IonGrid>
         </Card>
-        <Button className="button start ion-margin-bottom" size="large" href="" text="Account aanmaken"/>
+        <Button className="start ion-margin-bottom" size="large" href="#" text="Account aanmaken" />
       </div>
     </IonContent>
   );
