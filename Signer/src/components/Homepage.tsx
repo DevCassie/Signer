@@ -1,12 +1,17 @@
-import { IonButton, IonContent, IonGrid, IonRow, IonCol, IonText, IonInput, IonItem, IonHeader, IonTabBar, IonTab } from '@ionic/react';
+import { IonHeader, IonTitle, IonPage, IonContent } from '@ionic/react';
+import { RouteComponentProps } from 'react-router';
+import './Homepage.css';
 
-interface ContainerProps { }
-
-const Homepage: React.FC<ContainerProps> = () => {
+const Homepage: React.FC<RouteComponentProps> = (props: RouteComponentProps) => {
   return (
-    <IonHeader>
-        <title>Title</title>
-    </IonHeader>
+    <IonPage>
+      <IonHeader className="header">
+        <IonTitle color="light">John Doe</IonTitle>
+      </IonHeader>
+      <IonContent>
+
+      </IonContent>
+    </IonPage>
   );
 };
 

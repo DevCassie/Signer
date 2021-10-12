@@ -35,7 +35,7 @@ const StartScreen: React.FC<ContainerProps> = () => {
             </IonRow>
           </IonGrid>
         </Card>
-        <Button className="start ion-margin-bottom" size="large" href="#" text="Account aanmaken" />
+        <Button className="start ion-margin-bottom" size="large" href="/home" text="Account aanmaken" />
       </div>
     </IonContent>
   );
