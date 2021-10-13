@@ -1,18 +1,18 @@
 import { IonHeader, IonTitle, IonPage, IonContent } from '@ionic/react';
-import { RouteComponentProps } from 'react-router';
 import './Homepage.css';
 
-const Homepage: React.FC<RouteComponentProps> = (props: RouteComponentProps) => {
+interface ProfileProps { };
+
+const Profilepage: React.FC<ProfileProps> = () => {
   return (
-    <IonPage>
+    <IonPage show-tabs>
       <IonHeader className="header">
-        <IonTitle color="light">John Doe</IonTitle>
+        <IonTitle color="light">Profiel</IonTitle>
       </IonHeader>
       <IonContent>
-
       </IonContent>
     </IonPage>
   );
 };
 
-export default Homepage;
+export default Profilepage;

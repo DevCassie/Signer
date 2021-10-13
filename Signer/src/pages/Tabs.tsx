@@ -1,51 +1,49 @@
-import { Route } from 'react-router-dom';
-import { Component } from 'react';
+import { Route, Redirect } from 'react-router-dom';
 import { home, trophy, person, settings } from 'ionicons/icons';
-import { IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel, IonPage, IonRouterOutlet } from '@ionic/react';
+import { IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel, IonRouterOutlet } from '@ionic/react';
 import './Tabs.css';
-import Homepage from '../components/Homepage';
-import Profilepage from '../components/Profile';
+import Homepage from './Homepage';
+import Profilepage from './Profile';
+import SettingsPage from './Settings';
+import { useAuth } from '../Auth';
 
-class Tabs extends Component {
-  state = {
-    isActive: false
-  };
-
-  setActive = () => {
-    this.setState({ isActive: true });
+const Tabs: React.FC = () => {
+  const { loggedIn } = useAuth();
+  if (!loggedIn) {
+    return <Redirect to="/login" />;
   }
 
-  render() {
-    const isActive = this.state.isActive;
-    return <IonPage>
+  return (
     <IonTabs>
-      <IonRouterOutlet id="tabs">
-        <Route path="/:tab(home)" render={(props) => <Homepage {...props} />} component={Homepage} />
-        <Route path="/:tab(profile)" render={(props) => <Profilepage {...props} /> } component={Profilepage} />
-        <Route path="/achievements" />
-        <Route path="/settings" />
+      <IonRouterOutlet>
+          <Redirect from="/tabs" to="/tabs/home" />
+          <Route path="/tabs/home">
+            <Homepage />
+          </Route>
+          <Route path="/tabs/profiel" render={() => <Profilepage />} />
+          <Route path="/tabs/achievements" />
+          <Route path="/tabs/instellingen" render={() => <SettingsPage />} />
       </IonRouterOutlet>
       <IonTabBar slot="bottom" className="tabs" color="secondary">
-        <IonTabButton tab="home" href="/home" className={ isActive === true ? 'active' : undefined } >
+        <IonTabButton tab="home" href="/tabs/home">
           <IonIcon icon={home} color="dark"></IonIcon>
           <IonLabel color="dark">Home</IonLabel>
         </IonTabButton>
-        <IonTabButton tab="profile" href="/profile">
+        <IonTabButton tab="profiel" href="/tabs/profiel">
           <IonIcon icon={person} color="dark"></IonIcon>
-          <IonLabel color="dark">Profile</IonLabel>
+          <IonLabel color="dark">Profiel</IonLabel>
         </IonTabButton>
-        <IonTabButton tab="achievements" href="/achievements">
+        <IonTabButton tab="achievements" href="/tabs/achievements">
           <IonIcon icon={trophy} color="dark"></IonIcon>
           <IonLabel color="dark">Achievements</IonLabel>
         </IonTabButton>
-        <IonTabButton tab="settings" href="/settings">
+        <IonTabButton tab="settings" href="/tabs/instellingen">
           <IonIcon icon={settings} color="dark"></IonIcon>
-          <IonLabel color="dark">Settings</IonLabel>
+          <IonLabel color="dark">Instellingen</IonLabel>
         </IonTabButton>
       </IonTabBar>
     </IonTabs>
-  </IonPage>
-  }
+  )
 }
 
 export default Tabs;
