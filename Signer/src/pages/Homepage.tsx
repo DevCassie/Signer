@@ -1,4 +1,4 @@
-import { IonHeader, IonTitle, IonPage, IonContent, IonText, IonGrid, IonCol, IonRow, IonInfiniteScroll, IonInfiniteScrollContent } from '@ionic/react';
+import { IonHeader, IonTitle, IonPage, IonContent, IonText } from '@ionic/react';
 import './Homepage.css';
 import { auth } from '../firebase';
 import Card from '../components/Card';

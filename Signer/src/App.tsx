@@ -1,6 +1,6 @@
 import React from 'react';
-import { Route, Redirect, Switch } from 'react-router-dom';
-import { IonApp, IonRouterOutlet, IonLoading } from '@ionic/react';
+import { Route, Switch } from 'react-router-dom';
+import { IonApp, IonLoading } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Login from './pages/Login';
 import Start from './pages/Start';
