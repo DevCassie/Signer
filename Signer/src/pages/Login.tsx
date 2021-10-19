@@ -2,6 +2,7 @@ import { IonContent, IonGrid, IonRow, IonCol, IonText, IonLoading } from '@ionic
 import { signInWithEmailAndPassword } from '@firebase/auth';
 import Button from '../components/Button';
 import IconInput from '../components/IconInput';
+import Mascot from '../components/Mascot';
 import Card from '../components/Card';
 import React, { useState } from 'react';
 import { Redirect } from 'react-router';
@@ -37,9 +38,9 @@ const LoginPage: React.FC<ContainerProps> = () => {
 
   return (
     <IonContent>
-      <div className="container icon">
-      </div>
-      <div className="container flex ion-padding text-align-center">
+      <div className="container page_content ion-padding">
+        <Mascot />
+        <div className="container flex text-align-center">
           <h1><IonText color="light">Welkom terug</IonText></h1>
           <IonText color="light" className="subheading">Log in</IonText>
         <Card>
@@ -56,7 +57,8 @@ const LoginPage: React.FC<ContainerProps> = () => {
             </IonRow>
           </IonGrid>
         </Card>
-        <Button className="start ion-margin-bottom" size="large" text="Account aanmaken" onClick={handleLogin} />
+        <Button className="start" size="large" text="Inloggen" onClick={handleLogin} />
+      </div>
       </div>
       <IonLoading isOpen={status.loading} />
     </IonContent>

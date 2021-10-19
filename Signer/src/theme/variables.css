@@ -5,6 +5,7 @@ http://ionicframework.com/docs/theming/ */
 :root {
   --ion-background-color: #242323;
   --ion-font-family: "Poppins", BlinkMacSystemFont, "Helvetica Neue", "Roboto", sans-serif;
+  --ion-secondary-font-family: "Antic Slab", serif;
 
   /** primary **/
   --ion-color-primary: #B150FB;

@@ -1,0 +1,26 @@
+.container.circle {
+    background-color: var(--ion-color-secondary);
+    clip-path: circle(50% at 50% 50%);
+    height: 20vh;
+    width: 20vh;
+    padding: 5px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+    top: 5%;
+}
+
+.container.circle.mascot_white {
+    background-color: var(--ion-color-light);
+    height: 10vh;
+    width: 10vh;
+}
+
+.container.circle.header_small {
+    height: 5vh;
+    width: 5vh;
+    padding: 2px;
+    position: unset;
+    margin: unset;
+    grid-column: 1 / 2
+}

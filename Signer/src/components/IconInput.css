@@ -15,10 +15,13 @@ ion-input {
     outline: none;
     border: none;
     background-color: transparent;
-    padding: 12px;
     text-align: right;
     width: 100%;  
     color: #D9B544;
+}
+
+ion-input input {
+    padding: 10px !important;
 }
 
 ion-input::placeholder {
