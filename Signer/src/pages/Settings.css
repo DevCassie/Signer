@@ -1,0 +1,22 @@
+ion-item {
+    --background: rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin: 0 0 10px 0;
+    width: 100%;
+}
+
+ion-toggle {
+    --background: var(--ion-color-secondary-contrast);
+    --background-checked: var(--ion-color-secondary-contrast);
+    --handle-background: var(--ion-color-light);
+    --handle-background-checked: var(--ion-color-light);
+}
+
+ion-icon {
+    font-size: 24px;
+}
+
+.align_right {
+    position: absolute;
+    right: 14.5%;
+}

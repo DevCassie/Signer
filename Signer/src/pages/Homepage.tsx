@@ -42,6 +42,46 @@ const Homepage: React.FC<Homeprops> = () => {
                 <a href="/quiz">Leer onderwerp</a>
               </div>
             </Card>
+            <Card className="grid">
+              <div className="column_small">
+                <Mascot className="mascot_white" />
+              </div>
+              <div className="column_big">
+                <IonText color="dark">Introductie</IonText>
+                <IonText color="dark" className="secondary_font_family vragen">10 vragen</IonText>
+                <a href="/quiz">Leer onderwerp</a>
+              </div>
+            </Card>
+            <Card className="grid">
+              <div className="column_small">
+                <Mascot className="mascot_white" />
+              </div>
+              <div className="column_big">
+                <IonText color="dark">Introductie</IonText>
+                <IonText color="dark" className="secondary_font_family vragen">10 vragen</IonText>
+                <a href="/quiz">Leer onderwerp</a>
+              </div>
+            </Card>
+            <Card className="grid">
+              <div className="column_small">
+                <Mascot className="mascot_white" />
+              </div>
+              <div className="column_big">
+                <IonText color="dark">Introductie</IonText>
+                <IonText color="dark" className="secondary_font_family vragen">10 vragen</IonText>
+                <a href="/quiz">Leer onderwerp</a>
+              </div>
+            </Card>
+            <Card className="grid">
+              <div className="column_small">
+                <Mascot className="mascot_white" />
+              </div>
+              <div className="column_big">
+                <IonText color="dark">Introductie</IonText>
+                <IonText color="dark" className="secondary_font_family vragen">10 vragen</IonText>
+                <a href="/quiz">Leer onderwerp</a>
+              </div>
+            </Card>
           </div>  
         </div>
       </IonContent>

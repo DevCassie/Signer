@@ -27,19 +27,19 @@ const Tabs: React.FC = () => {
       <IonTabBar slot="bottom" className="tabs" color="secondary">
         <IonTabButton tab="home" href="/tabs/home">
           <IonIcon icon={home} color="dark"></IonIcon>
-          <IonLabel color="dark">Home</IonLabel>
+          {/* <IonLabel color="dark">Home</IonLabel> */}
         </IonTabButton>
         <IonTabButton tab="profiel" href="/tabs/profiel">
           <IonIcon icon={person} color="dark"></IonIcon>
-          <IonLabel color="dark">Profiel</IonLabel>
+          {/* <IonLabel color="dark">Profiel</IonLabel> */}
         </IonTabButton>
         <IonTabButton tab="achievements" href="/tabs/achievements">
           <IonIcon icon={trophy} color="dark"></IonIcon>
-          <IonLabel color="dark">Achievements</IonLabel>
+          {/* <IonLabel color="dark">Achievements</IonLabel> */}
         </IonTabButton>
         <IonTabButton tab="settings" href="/tabs/instellingen">
           <IonIcon icon={settings} color="dark"></IonIcon>
-          <IonLabel color="dark">Instellingen</IonLabel>
+          {/* <IonLabel color="dark">Instellingen</IonLabel> */}
         </IonTabButton>
       </IonTabBar>
     </IonTabs>

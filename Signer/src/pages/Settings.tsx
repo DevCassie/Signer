@@ -1,45 +1,71 @@
-import { IonContent, IonText, IonLoading } from '@ionic/react';
-import { signOut } from '@firebase/auth';
+import { IonContent, IonText, IonLoading, IonPage, IonTitle, IonHeader, IonToggle, IonItem, IonLabel, IonButton, IonIcon } from '@ionic/react';
+import { chevronForwardOutline } from 'ionicons/icons';
+import Card from '../components/Card';
 import Button from '../components/Button';
 import React, { useState } from 'react';
 import { Redirect } from 'react-router';
 import { useAuth } from '../Auth';
-import { auth } from '../firebase';
 
+import './Settings.css';
 
 interface ContainerProps { }
 
 const SettingsPage: React.FC<ContainerProps> = () => {
   const { loggedIn } = useAuth();
-  const [status, setStatus] = useState({ loading: false, error: false });
-  
-  const handleSignout = async () => {
-    try {
-      if (loggedIn) {
-        setStatus({ loading: true, error: false });
-        await signOut(auth);
-      }
-    } catch (error) {
-      setStatus({ loading: false, error: true });
-      console.log(error);
-    }
-  }
+  const [checked, setChecked] = useState(false);
 
   if (!loggedIn) {
     return <Redirect to="/" />;
   }
 
   return (
+    <IonPage>
+    <IonHeader className="header ion-padding">
+      <div className="grid">
+        <div className="header_title">
+          <IonTitle color="light" >Instellingen</IonTitle>
+        </div>
+      </div>
+    </IonHeader>
     <IonContent>
-      <div className="container icon">
+      <div className="container page_content ion-padding">
+        <div className="container flex align_top">
+          <Card className="flex align_top full_width">
+              <IonItem>
+                <IonLabel>Meldingen</IonLabel>
+                <IonToggle checked={checked} onClick={() => setChecked(true)} />
+              </IonItem>
+              <IonItem>
+                <IonLabel>Donkere modus</IonLabel>
+                <IonToggle checked={checked} onClick={() => setChecked(true)} />
+              </IonItem>
+              <IonItem>
+                <IonLabel>Instellingen 1</IonLabel>
+                <IonToggle checked={checked} onClick={() => setChecked(true)} />
+              </IonItem>
+              <IonItem>
+                <IonLabel>Instellingen 2</IonLabel>
+                <IonToggle checked={checked} onClick={() => setChecked(true)} />
+              </IonItem>
+              <IonItem>
+                <IonLabel>Instellingen 3</IonLabel>
+                <IonToggle checked={checked} onClick={() => setChecked(true)} />
+              </IonItem>
+              <IonItem>
+                <IonLabel>Instellingen 4</IonLabel>
+                <IonToggle checked={checked} onClick={() => setChecked(true)} />
+              </IonItem>
+              <IonItem>
+                <IonLabel>Help en support <IonIcon icon={chevronForwardOutline} className="align_right"></IonIcon></IonLabel>
+              </IonItem>
+              <IonItem>
+                <IonLabel>Over <IonIcon size="medium" icon={chevronForwardOutline} className="align_right" slot="end"></IonIcon></IonLabel>
+              </IonItem>
+          </Card>
+        </div>  
       </div>
-      <div className="container flex ion-padding text-align-center">
-          <h1><IonText color="light">Instellingen</IonText></h1>
-          <IonText color="light" className="subheading">Log in</IonText>
-        <Button className="start ion-margin-bottom" size="large" text="Uitloggen" onClick={handleSignout} />
-      </div>
-      <IonLoading isOpen={status.loading} />
     </IonContent>
+  </IonPage>
   );
 };
 
