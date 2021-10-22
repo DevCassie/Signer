@@ -1,0 +1,51 @@
+ion-header.header {
+    padding: 20px 20px 0 20px;
+}
+
+.header_menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+}
+
+.header_menu ion-text {
+    z-index: 2;
+}
+
+
+#slider_change {
+    background-color: var(--ion-color-secondary);
+    color: var(--ion-color-secondary-contrast);
+    padding: 20px;
+    border-radius: 5px 5px 0 0;
+    position: absolute;
+    width: 130px;
+    top: -68%;
+    left: -4%;
+    z-index: 0;
+}
+
+.card.flex {
+    align-items: center;
+}
+
+ion-text.margin_bottom {
+    margin: 0 0 20px 0;
+}
+
+ion-text.text_align_center {
+    text-align: center;
+}
+
+ion-icon.icon_achievement {
+    font-size: 44px;
+}
+
+.card.flex.column_1 {
+    grid-column: 1 / 2;
+}
+
+.card.flex.column_2 {
+    grid-column: 2 / 3;
+}

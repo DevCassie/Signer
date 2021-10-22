@@ -1,7 +1,6 @@
-import { IonContent, IonText, IonLoading, IonPage, IonTitle, IonHeader, IonToggle, IonItem, IonLabel, IonButton, IonIcon } from '@ionic/react';
+import { IonContent, IonPage, IonTitle, IonHeader, IonToggle, IonItem, IonLabel, IonIcon } from '@ionic/react';
 import { chevronForwardOutline } from 'ionicons/icons';
 import Card from '../components/Card';
-import Button from '../components/Button';
 import React, { useState } from 'react';
 import { Redirect } from 'react-router';
 import { useAuth } from '../Auth';

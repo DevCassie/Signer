@@ -1,4 +1,5 @@
-import { IonHeader, IonTitle, IonPage, IonContent, IonText } from '@ionic/react';
+import { IonHeader, IonTitle, IonPage, IonContent, IonText, IonIcon } from '@ionic/react';
+import { trophy } from 'ionicons/icons';
 import './Homepage.css';
 import { auth } from '../firebase';
 import Card from '../components/Card';
@@ -14,8 +15,8 @@ const Homepage: React.FC<Homeprops> = () => {
         <div className="grid">
           <Mascot className="header_small" />
           <div className="header_title">
-            <IonTitle color="light" >{userName}</IonTitle>
-            <IonText color="light" >Master</IonText>
+            <IonTitle color="light">{userName}</IonTitle>
+            <IonText color="light" className="secondary_font_family"><IonIcon icon={trophy} className="small" /> Master</IonText>
           </div>
         </div>
       </IonHeader>
@@ -27,7 +28,7 @@ const Homepage: React.FC<Homeprops> = () => {
                 <Mascot className="mascot_white" />
               </div>
               <div className="column_big">
-                <IonText color="dark">Introductie</IonText>
+                <IonText color="dark"><strong>Introductie</strong></IonText>
                 <IonText color="dark" className="secondary_font_family vragen">10 vragen</IonText>
                 <a href="/quiz">Leer onderwerp</a>
               </div>
@@ -37,7 +38,7 @@ const Homepage: React.FC<Homeprops> = () => {
                 <Mascot className="mascot_white" />
               </div>
               <div className="column_big">
-                <IonText color="dark">Introductie</IonText>
+                <IonText color="dark"><strong>Introductie</strong></IonText>
                 <IonText color="dark" className="secondary_font_family vragen">10 vragen</IonText>
                 <a href="/quiz">Leer onderwerp</a>
               </div>
@@ -47,7 +48,7 @@ const Homepage: React.FC<Homeprops> = () => {
                 <Mascot className="mascot_white" />
               </div>
               <div className="column_big">
-                <IonText color="dark">Introductie</IonText>
+                <IonText color="dark"><strong>Introductie</strong></IonText>
                 <IonText color="dark" className="secondary_font_family vragen">10 vragen</IonText>
                 <a href="/quiz">Leer onderwerp</a>
               </div>
@@ -57,7 +58,7 @@ const Homepage: React.FC<Homeprops> = () => {
                 <Mascot className="mascot_white" />
               </div>
               <div className="column_big">
-                <IonText color="dark">Introductie</IonText>
+                <IonText color="dark"><strong>Introductie</strong></IonText>
                 <IonText color="dark" className="secondary_font_family vragen">10 vragen</IonText>
                 <a href="/quiz">Leer onderwerp</a>
               </div>
@@ -67,7 +68,7 @@ const Homepage: React.FC<Homeprops> = () => {
                 <Mascot className="mascot_white" />
               </div>
               <div className="column_big">
-                <IonText color="dark">Introductie</IonText>
+                <IonText color="dark"><strong>Introductie</strong></IonText>
                 <IonText color="dark" className="secondary_font_family vragen">10 vragen</IonText>
                 <a href="/quiz">Leer onderwerp</a>
               </div>
@@ -77,7 +78,7 @@ const Homepage: React.FC<Homeprops> = () => {
                 <Mascot className="mascot_white" />
               </div>
               <div className="column_big">
-                <IonText color="dark">Introductie</IonText>
+                <IonText color="dark"><strong>Introductie</strong></IonText>
                 <IonText color="dark" className="secondary_font_family vragen">10 vragen</IonText>
                 <a href="/quiz">Leer onderwerp</a>
               </div>

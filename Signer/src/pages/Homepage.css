@@ -31,10 +31,15 @@ ion-text:nth-child(2) {
     flex-direction: column;
 }
 
+.header_title ion-icon.small {
+    font-size: 16px;
+}
+
 .container.flex.align_top {
     justify-content: flex-start;
 }
 
-.vragen {
-    font-size: 14px;
+ion-text.vragen {
+    font-size: 16px;
+    margin: 5px 0 20px 0 !important;
 }

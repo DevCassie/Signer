@@ -13,56 +13,54 @@ const Profile: React.FC<Homeprops> = () => {
   const email = auth.currentUser.email;
   return (
     <IonPage>
-      <IonHeader className="header ion-padding">
-        <IonTitle>
-          <div className="header_title">
-            <IonText color="light">{userName}</IonText>
-            <IonText color="light"><IonIcon icon={trophy} /> Master</IonText>
-          </div>
-        </IonTitle>
-      </IonHeader>
       <IonContent>
-        <div className="container page_content ion-padding">
-          <div className="container flex align_top">
+        <div className="container page_content">
+          <div className="container flex align_top align_center">
+            <div className="header_title no_mascot background_purple ion-padding">
+              <IonTitle color="light">{userName}</IonTitle>
+              <IonText color="light" className="secondary_font_family"><IonIcon icon={trophy} className="small" /> Master</IonText>
+            </div>
             <Mascot className="profile_page" />
-            <div className="grid">
-              <Card className='card_achievement level'>
-                <IonText>35</IonText>
-                <IonText>Level</IonText>
+            <div className="ion-padding">
+              <div className="grid">
+                <Card className='card_achievement level'>
+                  <IonText>35</IonText>
+                  <IonText>Level</IonText>
+                </Card>
+                <Card className="card_achievement achievements">
+                  <IonText>20</IonText>
+                  <IonText>Trophies</IonText>
+                </Card>
+                <Card className="card_achievement coins">
+                  <IonText>90</IonText>
+                  <IonText>Coins</IonText>
+                </Card>
+              </div>
+              <Card className="flex full_width">
+                <IonItem>
+                  <IonLabel>Pas karakter aan <IonIcon icon={chevronForwardOutline} className="align_right"></IonIcon></IonLabel>
+                </IonItem>
               </Card>
-              <Card className="card_achievement achievements">
-                <IonText>20</IonText>
-                <IonText>Trophies</IonText>
-              </Card>
-              <Card className="card_achievement coins">
-                <IonText>90</IonText>
-                <IonText>Coins</IonText>
+              <Card className="inlog_gegevens">
+                <IonGrid>
+                  <IonRow>
+                    <IonCol>
+                      <IconInput placeholder="Gebruikersnaam" color="light" type="text" iconclassName="fas fa-user" value={userName} />
+                    </IonCol>
+                  </IonRow>
+                  <IonRow>
+                    <IonCol>
+                      <IconInput placeholder="Email" color="light" type="email" iconclassName="fas fa-envelope" value={email} />
+                    </IonCol>
+                  </IonRow>
+                  <IonRow>
+                    <IonCol>
+                      <IconInput placeholder="Wachtwoord" color="light" type="password" iconclassName="fas fa-key" value='password' />
+                    </IonCol>
+                  </IonRow>
+                </IonGrid>
               </Card>
             </div>
-            <Card className="flex full_width">
-              <IonItem>
-                <IonLabel>Pas karakter aan <IonIcon icon={chevronForwardOutline} className="align_right"></IonIcon></IonLabel>
-              </IonItem>
-          </Card>
-          <Card className="inlog_gegevens">
-            <IonGrid>
-              <IonRow>
-                <IonCol>
-                  <IconInput placeholder="Gebruikersnaam" color="light" type="text" iconclassName="fas fa-user" value={userName} />
-                </IonCol>
-              </IonRow>
-              <IonRow>
-                <IonCol>
-                  <IconInput placeholder="Email" color="light" type="email" iconclassName="fas fa-envelope" value={email} />
-                </IonCol>
-              </IonRow>
-              <IonRow>
-                <IonCol>
-                  <IconInput placeholder="Wachtwoord" color="light" type="password" iconclassName="fas fa-key" value='password' />
-                </IonCol>
-              </IonRow>
-            </IonGrid>
-          </Card>
           </div>  
         </div>
       </IonContent>
