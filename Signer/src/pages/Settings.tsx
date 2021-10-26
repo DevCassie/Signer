@@ -31,34 +31,34 @@ const SettingsPage: React.FC<ContainerProps> = () => {
         <div className="container flex align_top">
           <Card className="flex align_top full_width">
               <IonItem>
-                <IonLabel>Meldingen</IonLabel>
+                <IonLabel color="dark">Meldingen</IonLabel>
                 <IonToggle checked={checked} onClick={() => setChecked(true)} />
               </IonItem>
               <IonItem>
-                <IonLabel>Donkere modus</IonLabel>
+                <IonLabel color="dark">Donkere modus</IonLabel>
                 <IonToggle checked={checked} onClick={() => setChecked(true)} />
               </IonItem>
               <IonItem>
-                <IonLabel>Instellingen 1</IonLabel>
+                <IonLabel color="dark">Instellingen 1</IonLabel>
                 <IonToggle checked={checked} onClick={() => setChecked(true)} />
               </IonItem>
               <IonItem>
-                <IonLabel>Instellingen 2</IonLabel>
+                <IonLabel color="dark">Instellingen 2</IonLabel>
                 <IonToggle checked={checked} onClick={() => setChecked(true)} />
               </IonItem>
               <IonItem>
-                <IonLabel>Instellingen 3</IonLabel>
+                <IonLabel color="dark">Instellingen 3</IonLabel>
                 <IonToggle checked={checked} onClick={() => setChecked(true)} />
               </IonItem>
               <IonItem>
-                <IonLabel>Instellingen 4</IonLabel>
+                <IonLabel color="dark">Instellingen 4</IonLabel>
                 <IonToggle checked={checked} onClick={() => setChecked(true)} />
               </IonItem>
               <IonItem>
-                <IonLabel>Help en support <IonIcon icon={chevronForwardOutline} className="align_right"></IonIcon></IonLabel>
+                <IonLabel color="dark">Help en support <IonIcon icon={chevronForwardOutline} className="align_right"></IonIcon></IonLabel>
               </IonItem>
               <IonItem>
-                <IonLabel>Over <IonIcon size="medium" icon={chevronForwardOutline} className="align_right" slot="end"></IonIcon></IonLabel>
+                <IonLabel color="dark">Over <IonIcon size="medium" icon={chevronForwardOutline} className="align_right" slot="end"></IonIcon></IonLabel>
               </IonItem>
           </Card>
         </div>  

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { IonHeader, IonTitle, IonPage, IonContent, IonText, IonIcon, IonicSwiper } from '@ionic/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore from 'swiper';
@@ -26,60 +26,93 @@ const Achievementspage: React.FC<Achievementsprops> = () => {
       <IonHeader className="header">
         <div className="grid">
           <Mascot className="header_small" />
-          <div className="header_title">
+          <div className="header_title achievements">
             <IonTitle color="light">{userName}</IonTitle>
-            <IonText color="light">Master</IonText>
+            <IonText color="light"><IonIcon icon={trophy} color="light" /> Master</IonText>
           </div>
           <div className="header_menu">
-            <div id="slider_change"></div>
-            <IonText color="dark">Achievements</IonText>
-            <IonText color="dark">Shop</IonText>
+            <div id="selected_background">
+              <IonText color="dark">Achievements</IonText>
+            </div>
+            <IonText color="light">Shop</IonText>
           </div>
         </div>
       </IonHeader>
       <IonContent>
-        <Swiper effect="fade">
+        <Swiper effect="fade" initialSlide={0}>
           <SwiperSlide>
             <div className="container page_content ion-padding">
               <div className="container grid align_top">
                 <Card className="flex column_1">
-                  <IonIcon icon={trophy} className="icon_achievement" /> 
-                  <IonText color="dark" className="margin_bottom"><strong>Introductie</strong></IonText>
+                  <div className="background_dark_blue">
+                    <div className="background_light_blue">
+                      <IonIcon icon={trophy} className="icon_achievement" /> 
+                    </div>
+                  </div>
+                  <IonText color="dark" className="margin_bottom margin_top"><strong>Introductie</strong></IonText>
                   <IonText color="dark" className="secondary_font_family text_align_center">Je hebt je introductie<br />behaald!</IonText>
                 </Card>
                 <Card className="flex column_2">
-                  <IonIcon icon={trophy} className="icon_achievement" /> 
-                  <IonText color="dark" className="margin_bottom"><strong>Introductie</strong></IonText>
+                  <div className="background_dark_blue">
+                    <div className="background_light_blue">
+                      <IonIcon icon={trophy} className="icon_achievement" /> 
+                    </div>
+                  </div> 
+                  <IonText color="dark" className="margin_bottom margin_top"><strong>Introductie</strong></IonText>
                   <IonText color="dark" className="secondary_font_family text_align_center">Je hebt je introductie<br />behaald!</IonText>
                 </Card>
                 <Card className="flex column_1">
-                  <IonIcon icon={trophy} className="icon_achievement" /> 
-                  <IonText color="dark" className="margin_bottom"><strong>Introductie</strong></IonText>
+                  <div className="background_dark_blue">
+                    <div className="background_light_blue">
+                      <IonIcon icon={trophy} className="icon_achievement" /> 
+                    </div>
+                  </div>
+                  <IonText color="dark" className="margin_bottom margin_top"><strong>Introductie</strong></IonText>
                   <IonText color="dark" className="secondary_font_family text_align_center">Je hebt je introductie<br />behaald!</IonText>
                 </Card>
                 <Card className="flex column_2">
-                  <IonIcon icon={trophy} className="icon_achievement" /> 
-                  <IonText color="dark" className="margin_bottom"><strong>Introductie</strong></IonText>
+                  <div className="background_dark_blue">
+                    <div className="background_light_blue">
+                      <IonIcon icon={trophy} className="icon_achievement" /> 
+                    </div>
+                  </div>
+                  <IonText color="dark" className="margin_bottom margin_top"><strong>Introductie</strong></IonText>
                   <IonText color="dark" className="secondary_font_family text_align_center">Je hebt je introductie<br />behaald!</IonText>
                 </Card>
                 <Card className="flex column_1">
-                  <IonIcon icon={trophy} className="icon_achievement" /> 
-                  <IonText color="dark" className="margin_bottom"><strong>Introductie</strong></IonText>
+                  <div className="background_dark_blue">
+                    <div className="background_light_blue">
+                      <IonIcon icon={trophy} className="icon_achievement" /> 
+                    </div>
+                  </div> 
+                  <IonText color="dark" className="margin_bottom margin_top"><strong>Introductie</strong></IonText>
                   <IonText color="dark" className="secondary_font_family text_align_center">Je hebt je introductie<br />behaald!</IonText>
                 </Card>
                 <Card className="flex column_2">
-                  <IonIcon icon={trophy} className="icon_achievement" /> 
-                  <IonText color="dark" className="margin_bottom"><strong>Introductie</strong></IonText>
+                  <div className="background_dark_blue">
+                    <div className="background_light_blue">
+                      <IonIcon icon={trophy} className="icon_achievement" /> 
+                    </div>
+                  </div>
+                  <IonText color="dark" className="margin_bottom margin_top"><strong>Introductie</strong></IonText>
                   <IonText color="dark" className="secondary_font_family text_align_center">Je hebt je introductie<br />behaald!</IonText>
                 </Card>
                 <Card className="flex column_1">
-                  <IonIcon icon={trophy} className="icon_achievement" /> 
-                  <IonText color="dark" className="margin_bottom"><strong>Introductie</strong></IonText>
+                  <div className="background_dark_blue">
+                    <div className="background_light_blue">
+                      <IonIcon icon={trophy} className="icon_achievement" /> 
+                    </div>
+                  </div> 
+                  <IonText color="dark" className="margin_bottom margin_top"><strong>Introductie</strong></IonText>
                   <IonText color="dark" className="secondary_font_family text_align_center">Je hebt je introductie<br />behaald!</IonText>
                 </Card>
                 <Card className="flex column_2">
-                  <IonIcon icon={trophy} className="icon_achievement" /> 
-                  <IonText color="dark" className="margin_bottom"><strong>Introductie</strong></IonText>
+                  <div className="background_dark_blue">
+                    <div className="background_light_blue">
+                      <IonIcon icon={trophy} className="icon_achievement" /> 
+                    </div>
+                  </div>
+                  <IonText color="dark" className="margin_bottom margin_top"><strong>Introductie</strong></IonText>
                   <IonText color="dark" className="secondary_font_family text_align_center">Je hebt je introductie<br />behaald!</IonText>
                 </Card>
               </div>  
@@ -89,43 +122,75 @@ const Achievementspage: React.FC<Achievementsprops> = () => {
             <div className="container page_content ion-padding">
               <div className="container grid align_top">
                 <Card className="flex column_1">
-                  <IonIcon icon={trophy} className="icon_achievement" /> 
-                  <IonText color="dark" className="margin_bottom"><strong>Introductie</strong></IonText>
+                  <div className="background_dark_blue">
+                    <div className="background_light_blue">
+                      <IonIcon icon={trophy} className="icon_achievement" /> 
+                    </div>
+                  </div> 
+                  <IonText color="dark" className="margin_bottom margin_top"><strong>Introductie</strong></IonText>
                   <IonText color="dark" className="secondary_font_family text_align_center">Je hebt je introductie<br />behaald!</IonText>
                 </Card>
                 <Card className="flex column_2">
-                  <IonIcon icon={trophy} className="icon_achievement" /> 
-                  <IonText color="dark" className="margin_bottom"><strong>Introductie</strong></IonText>
+                  <div className="background_dark_blue">
+                    <div className="background_light_blue">
+                      <IonIcon icon={trophy} className="icon_achievement" /> 
+                    </div>
+                  </div>
+                  <IonText color="dark" className="margin_bottom margin_top"><strong>Introductie</strong></IonText>
                   <IonText color="dark" className="secondary_font_family text_align_center">Je hebt je introductie<br />behaald!</IonText>
                 </Card>
                 <Card className="flex column_1">
-                  <IonIcon icon={trophy} className="icon_achievement" /> 
-                  <IonText color="dark" className="margin_bottom"><strong>Introductie</strong></IonText>
+                  <div className="background_dark_blue">
+                    <div className="background_light_blue">
+                      <IonIcon icon={trophy} className="icon_achievement" /> 
+                    </div>
+                  </div>
+                  <IonText color="dark" className="margin_bottom margin_top"><strong>Introductie</strong></IonText>
                   <IonText color="dark" className="secondary_font_family text_align_center">Je hebt je introductie<br />behaald!</IonText>
                 </Card>
                 <Card className="flex column_2">
-                  <IonIcon icon={trophy} className="icon_achievement" /> 
-                  <IonText color="dark" className="margin_bottom"><strong>Introductie</strong></IonText>
+                  <div className="background_dark_blue">
+                    <div className="background_light_blue">
+                      <IonIcon icon={trophy} className="icon_achievement" /> 
+                    </div>
+                  </div> 
+                  <IonText color="dark" className="margin_bottom margin_top"><strong>Introductie</strong></IonText>
                   <IonText color="dark" className="secondary_font_family text_align_center">Je hebt je introductie<br />behaald!</IonText>
                 </Card>
                 <Card className="flex column_1">
-                  <IonIcon icon={trophy} className="icon_achievement" /> 
-                  <IonText color="dark" className="margin_bottom"><strong>Introductie</strong></IonText>
+                  <div className="background_dark_blue">
+                    <div className="background_light_blue">
+                      <IonIcon icon={trophy} className="icon_achievement" /> 
+                    </div>
+                  </div> 
+                  <IonText color="dark" className="margin_bottom margin_top"><strong>Introductie</strong></IonText>
                   <IonText color="dark" className="secondary_font_family text_align_center">Je hebt je introductie<br />behaald!</IonText>
                 </Card>
                 <Card className="flex column_2">
-                  <IonIcon icon={trophy} className="icon_achievement" /> 
-                  <IonText color="dark" className="margin_bottom"><strong>Introductie</strong></IonText>
+                  <div className="background_dark_blue">
+                    <div className="background_light_blue">
+                      <IonIcon icon={trophy} className="icon_achievement" /> 
+                    </div>
+                  </div>
+                  <IonText color="dark" className="margin_bottom margin_top"><strong>Introductie</strong></IonText>
                   <IonText color="dark" className="secondary_font_family text_align_center">Je hebt je introductie<br />behaald!</IonText>
                 </Card>
                 <Card className="flex column_1">
-                  <IonIcon icon={trophy} className="icon_achievement" /> 
-                  <IonText color="dark" className="margin_bottom"><strong>Introductie</strong></IonText>
+                  <div className="background_dark_blue">
+                    <div className="background_light_blue">
+                      <IonIcon icon={trophy} className="icon_achievement" /> 
+                    </div>
+                  </div>
+                  <IonText color="dark" className="margin_bottom margin_top"><strong>Introductie</strong></IonText>
                   <IonText color="dark" className="secondary_font_family text_align_center">Je hebt je introductie<br />behaald!</IonText>
                 </Card>
                 <Card className="flex column_2">
-                  <IonIcon icon={trophy} className="icon_achievement" /> 
-                  <IonText color="dark" className="margin_bottom"><strong>Introductie</strong></IonText>
+                  <div className="background_dark_blue">
+                    <div className="background_light_blue">
+                      <IonIcon icon={trophy} className="icon_achievement" /> 
+                    </div>
+                  </div>
+                  <IonText color="dark" className="margin_bottom margin_top"><strong>Introductie</strong></IonText>
                   <IonText color="dark" className="secondary_font_family text_align_center">Je hebt je introductie<br />behaald!</IonText>
                 </Card>
               </div>  

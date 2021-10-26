@@ -7,23 +7,31 @@ ion-header.header {
     flex-direction: row;
     gap: 20px;
     position: relative;
+    align-items: center;
 }
 
 .header_menu ion-text {
     z-index: 2;
 }
 
+.header_title.achievements {
+    margin: 0 0 0 -70vw;
+}
 
-#slider_change {
+.header_title.achievements ion-icon {
+    font-size: 16px;
+}
+
+#selected_background {
     background-color: var(--ion-color-secondary);
     color: var(--ion-color-secondary-contrast);
     padding: 20px;
     border-radius: 5px 5px 0 0;
-    position: absolute;
-    width: 130px;
-    top: -68%;
-    left: -4%;
+    width: 45vw;
+    text-align: center;
     z-index: 0;
+    padding: 20px;
+    display: block;
 }
 
 .card.flex {
@@ -32,6 +40,10 @@ ion-header.header {
 
 ion-text.margin_bottom {
     margin: 0 0 20px 0;
+}
+
+ion-text.margin_top {
+    margin-top: 10px;
 }
 
 ion-text.text_align_center {
@@ -48,4 +60,24 @@ ion-icon.icon_achievement {
 
 .card.flex.column_2 {
     grid-column: 2 / 3;
+}
+
+.background_dark_blue {
+    background-color: #52BEBD;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.background_light_blue {
+    background-color: #60E1E0;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

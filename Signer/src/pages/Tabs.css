@@ -2,8 +2,16 @@
     border-radius: 5px 5px 0 0;
 }
 
+ion-tab-bar {
+    --border: 0;
+}
+
 ion-tab-button {
     --color-selected: var(--ion-color-secondary-contrast);
+}
+
+ion-tab-button ion-icon {
+    font-size: 24px;
 }
 
 ion-tab-button ion-icon::after {

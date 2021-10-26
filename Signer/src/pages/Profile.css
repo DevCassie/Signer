@@ -94,3 +94,9 @@ ion-text:nth-child(2) {
 .header_title.align_left {
     align-items: flex-start;
 }
+
+ion-item {
+    --inner-border-width: 0 !important;
+    --border-color: transparent;
+    --border-style: none;
+}

@@ -17,9 +17,9 @@
 }
 
 .container.circle.header_small {
-    height: 5vh;
-    width: 5vh;
-    padding: 2px;
+    height: 10vh;
+    width: 10vh;
+    padding: 4px;
     position: unset;
     margin: unset;
     grid-column: 1 / 2

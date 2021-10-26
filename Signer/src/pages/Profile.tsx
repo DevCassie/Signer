@@ -24,21 +24,21 @@ const Profile: React.FC<Homeprops> = () => {
             <div className="ion-padding">
               <div className="grid">
                 <Card className='card_achievement level'>
-                  <IonText>35</IonText>
-                  <IonText>Level</IonText>
+                  <IonText color="dark">35</IonText>
+                  <IonText color="dark">Level</IonText>
                 </Card>
                 <Card className="card_achievement achievements">
-                  <IonText>20</IonText>
-                  <IonText>Trophies</IonText>
+                  <IonText color="dark">20</IonText>
+                  <IonText color="dark">Trophies</IonText>
                 </Card>
                 <Card className="card_achievement coins">
-                  <IonText>90</IonText>
-                  <IonText>Coins</IonText>
+                  <IonText color="dark">90</IonText>
+                  <IonText color="dark">Coins</IonText>
                 </Card>
               </div>
               <Card className="flex full_width">
                 <IonItem>
-                  <IonLabel>Pas karakter aan <IonIcon icon={chevronForwardOutline} className="align_right"></IonIcon></IonLabel>
+                  <IonLabel color="dark">Pas karakter aan <IonIcon icon={chevronForwardOutline} color="dark" className="align_right"></IonIcon></IonLabel>
                 </IonItem>
               </Card>
               <Card className="inlog_gegevens">
