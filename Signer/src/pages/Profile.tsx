@@ -21,7 +21,7 @@ const Profile: React.FC<Homeprops> = () => {
               <IonText color="light" className="secondary_font_family"><IonIcon icon={trophy} className="small" /> Master</IonText>
             </div>
             <Mascot className="profile_page" />
-            <div className="ion-padding">
+            <div className="ion-padding no_padding_top">
               <div className="grid">
                 <Card className='card_achievement level'>
                   <IonText color="dark">35</IonText>

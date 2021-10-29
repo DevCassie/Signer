@@ -1,4 +1,4 @@
-ion-header.header {
+ion-header.header_achievements {
     padding: 20px 20px 0 20px;
 }
 
@@ -15,14 +15,16 @@ ion-header.header {
 }
 
 .header_title.achievements {
-    margin: 0 0 0 -70vw;
+    position: fixed;
+    top: 5%;
+    left: 30%;
 }
 
 .header_title.achievements ion-icon {
     font-size: 16px;
 }
 
-#selected_background {
+.selected_background {
     background-color: var(--ion-color-secondary);
     color: var(--ion-color-secondary-contrast);
     padding: 20px;
@@ -48,6 +50,13 @@ ion-text.margin_top {
 
 ion-text.text_align_center {
     text-align: center;
+}
+
+ion-text.text_align_center.icon_align {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
 }
 
 ion-icon.icon_achievement {
@@ -80,4 +89,8 @@ ion-icon.icon_achievement {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.background_purple {
+    background-color: var(--ion-color-primary-shade);
 }

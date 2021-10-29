@@ -100,3 +100,8 @@ ion-item {
     --border-color: transparent;
     --border-style: none;
 }
+
+.ion-padding.no_padding_top {
+    --padding-top: 0;
+    padding-top: 0;
+}
