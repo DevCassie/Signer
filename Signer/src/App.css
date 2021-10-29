@@ -1,0 +1,8 @@
+.secondary_font_family {
+    font-family: var(--ion-secondary-font-family);
+}
+
+a {
+    text-decoration: none;
+    color: var(--ion-color-secondary-contrast);
+}

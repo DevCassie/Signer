@@ -1,0 +1,45 @@
+.grid {
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.column_small {
+    grid-column: 1 / 2;
+}
+
+.column_big {
+    grid-column: 2 / 4;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+ion-text:nth-child(2) {
+    margin: 0 0 20px 0;
+}
+
+.header {
+    background-color: var(--ion-color-primary-shade);
+}
+
+.header_title {
+    grid-column: 2 / 4;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.header_title ion-icon.small {
+    font-size: 16px;
+}
+
+.container.flex.align_top {
+    justify-content: flex-start;
+}
+
+ion-text.vragen {
+    font-size: 16px;
+    margin: 5px 0 20px 0 !important;
+}

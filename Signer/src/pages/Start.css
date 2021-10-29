@@ -1,0 +1,23 @@
+.container.flex {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.yellow-background {
+    background-color: var(--ion-color-secondary);
+    border-radius: 5px;
+}
+
+.container.page_content {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    height: 100%;
+}

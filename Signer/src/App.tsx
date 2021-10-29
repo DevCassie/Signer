@@ -1,7 +1,12 @@
-import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet } from '@ionic/react';
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import { IonApp, IonLoading } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/Home';
+import Login from './pages/Login';
+import Start from './pages/Start';
+import Tabs from './pages/Tabs';
+import SignUpPage from './pages/SignupPage';
+import { AuthContext, useAuthInit } from './Auth';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -22,19 +27,37 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
-const App: React.FC = () => (
-  <IonApp>
-    <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
-      </IonRouterOutlet>
-    </IonReactRouter>
+import './App.css';
+
+const App: React.FC = () => {
+  const { loading, auth } =  useAuthInit();
+  if (loading) {
+    return <IonLoading isOpen />;
+  }
+  console.log(`rendering App with auth:`, auth);
+
+  return (
+    <IonApp>
+      <AuthContext.Provider value={auth}>
+        <IonReactRouter>
+          <Switch>
+            <Route path="/" exact={true}>
+              <Start />
+            </Route>
+            <Route path="/login" exact={true}>
+              <Login />
+            </Route>
+            <Route path="/registreren" exact={true}>
+              <SignUpPage />
+            </Route>
+            <Route path="/tabs" >
+              <Tabs />
+            </Route>
+          </Switch>
+        </IonReactRouter>
+      </AuthContext.Provider>
   </IonApp>
-);
+  )
+};
 
 export default App;

@@ -1,0 +1,96 @@
+ion-header.header_achievements {
+    padding: 20px 20px 0 20px;
+}
+
+.header_menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+    align-items: center;
+}
+
+.header_menu ion-text {
+    z-index: 2;
+}
+
+.header_title.achievements {
+    position: fixed;
+    top: 5%;
+    left: 30%;
+}
+
+.header_title.achievements ion-icon {
+    font-size: 16px;
+}
+
+.selected_background {
+    background-color: var(--ion-color-secondary);
+    color: var(--ion-color-secondary-contrast);
+    padding: 20px;
+    border-radius: 5px 5px 0 0;
+    width: 45vw;
+    text-align: center;
+    z-index: 0;
+    padding: 20px;
+    display: block;
+}
+
+.card.flex {
+    align-items: center;
+}
+
+ion-text.margin_bottom {
+    margin: 0 0 20px 0;
+}
+
+ion-text.margin_top {
+    margin-top: 10px;
+}
+
+ion-text.text_align_center {
+    text-align: center;
+}
+
+ion-text.text_align_center.icon_align {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+}
+
+ion-icon.icon_achievement {
+    font-size: 44px;
+}
+
+.card.flex.column_1 {
+    grid-column: 1 / 2;
+}
+
+.card.flex.column_2 {
+    grid-column: 2 / 3;
+}
+
+.background_dark_blue {
+    background-color: #52BEBD;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.background_light_blue {
+    background-color: #60E1E0;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background_purple {
+    background-color: var(--ion-color-primary-shade);
+}

@@ -1,0 +1,29 @@
+.container.input {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.container.input i {
+    width: 50px;
+    color: var(--ion-color-dark);
+    align-self: center;
+}
+
+ion-input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    text-align: right;
+    width: 100%;  
+    color: #D9B544;
+}
+
+ion-input input {
+    padding: 10px !important;
+}
+
+ion-input::placeholder {
+    color: var(--ion-color-dark);
+}

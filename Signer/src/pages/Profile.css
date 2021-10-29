@@ -1,0 +1,107 @@
+ion-item.background_transparent {
+    --background: transparent;
+    --border: none;
+    --inner-border-width: 0;
+}
+
+.container.flex {
+    display: flex;  
+}
+
+.header_title.no_mascot {
+    grid-column: 1 / 4;
+    align-items: flex-start;
+}
+
+.header_title.background_purple {
+    background-color: var(--ion-color-primary-shade);
+    width: 100%;
+}
+
+.header_title ion-title {
+    padding: 0;
+}
+
+.container.flex.align_center {
+    align-items: center;
+}
+
+.container.flex.align_top {
+    justify-content: flex-start;
+}
+
+.container.card.card_achievement {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 26vw;
+    height: 15vh;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.container.card.card_achievement ion-text:nth-child(2) {
+    font-size: 12px;
+    margin: 0;
+}
+
+.container.card.card_achievement ion-text:nth-child(1) {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.grid {
+    gap: 20px;
+}
+
+.container.card.card_achievement.level {
+    grid-column: 1 / 2;
+}
+
+.container.card.card_achievement.achievements {
+    grid-column: 2 / 3;
+}
+
+.container.card.card_achievement.coins {
+    grid-column: 3 / 4;
+}
+
+.container.flex.full_width {
+    width: 100%;
+    height: auto;
+}
+
+.container.card.full_width {
+    width: 100%;
+}
+
+.container.input i {
+    margin: 0 0 0 10px;
+}
+
+.container.circle.profile_page {
+    top: -4%;
+    width: 15vh;
+    height: 15vh;
+    margin-bottom: 0;
+}
+
+ion-text:nth-child(2) {
+    margin: 0;
+}
+
+.header_title.align_left {
+    align-items: flex-start;
+}
+
+ion-item {
+    --inner-border-width: 0 !important;
+    --border-color: transparent;
+    --border-style: none;
+}
+
+.ion-padding.no_padding_top {
+    --padding-top: 0;
+    padding-top: 0;
+}
