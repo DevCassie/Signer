@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { IonHeader, IonTitle, IonPage, IonContent, IonText, IonIcon } from '@ionic/react';
 import { trophy } from 'ionicons/icons';
 import './Homepage.css';
@@ -30,7 +31,7 @@ const Homepage: React.FC<Homeprops> = () => {
               <div className="column_big">
                 <IonText color="dark"><strong>Introductie</strong></IonText>
                 <IonText color="dark" className="secondary_font_family vragen">10 vragen</IonText>
-                <a href="/quiz">Leer onderwerp</a>
+                <a href="#">Leer onderwerp</a>
               </div>
             </Card>
             <Card className="grid">
@@ -40,7 +41,7 @@ const Homepage: React.FC<Homeprops> = () => {
               <div className="column_big">
                 <IonText color="dark"><strong>Introductie</strong></IonText>
                 <IonText color="dark" className="secondary_font_family vragen">10 vragen</IonText>
-                <a href="/quiz">Leer onderwerp</a>
+                <a href="#">Leer onderwerp</a>
               </div>
             </Card>
             <Card className="grid">
@@ -50,7 +51,7 @@ const Homepage: React.FC<Homeprops> = () => {
               <div className="column_big">
                 <IonText color="dark"><strong>Introductie</strong></IonText>
                 <IonText color="dark" className="secondary_font_family vragen">10 vragen</IonText>
-                <a href="/quiz">Leer onderwerp</a>
+                <a href="#">Leer onderwerp</a>
               </div>
             </Card>
             <Card className="grid">
@@ -60,7 +61,7 @@ const Homepage: React.FC<Homeprops> = () => {
               <div className="column_big">
                 <IonText color="dark"><strong>Introductie</strong></IonText>
                 <IonText color="dark" className="secondary_font_family vragen">10 vragen</IonText>
-                <a href="/quiz">Leer onderwerp</a>
+                <a href="#">Leer onderwerp</a>
               </div>
             </Card>
             <Card className="grid">
@@ -70,7 +71,7 @@ const Homepage: React.FC<Homeprops> = () => {
               <div className="column_big">
                 <IonText color="dark"><strong>Introductie</strong></IonText>
                 <IonText color="dark" className="secondary_font_family vragen">10 vragen</IonText>
-                <a href="/quiz">Leer onderwerp</a>
+                <a href="#">Leer onderwerp</a>
               </div>
             </Card>
             <Card className="grid">
@@ -80,7 +81,7 @@ const Homepage: React.FC<Homeprops> = () => {
               <div className="column_big">
                 <IonText color="dark"><strong>Introductie</strong></IonText>
                 <IonText color="dark" className="secondary_font_family vragen">10 vragen</IonText>
-                <a href="/quiz">Leer onderwerp</a>
+                <a href="#">Leer onderwerp</a>
               </div>
             </Card>
           </div>  

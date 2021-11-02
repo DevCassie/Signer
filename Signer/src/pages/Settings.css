@@ -1,3 +1,9 @@
+.header_title.settings {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
 ion-item {
     --background: rgba(0, 0, 0, 0.25);
     border-radius: 5px;
@@ -7,9 +13,9 @@ ion-item {
 
 ion-toggle {
     --background: var(--ion-color-secondary-contrast);
-    --background-checked: var(--ion-color-secondary-contrast);
+    --background-checked: var(--ion-color-secondary);
     --handle-background: var(--ion-color-light);
-    --handle-background-checked: var(--ion-color-light);
+    --handle-background-checked: var(--ion-color-tertiary);
 }
 
 ion-icon {

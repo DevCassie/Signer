@@ -1,5 +1,5 @@
 import { IonContent, IonPage, IonTitle, IonHeader, IonToggle, IonItem, IonLabel, IonIcon } from '@ionic/react';
-import { chevronForwardOutline } from 'ionicons/icons';
+import { chevronForwardOutline, chevronBackOutline } from 'ionicons/icons';
 import Card from '../components/Card';
 import React, { useState } from 'react';
 import { Redirect } from 'react-router';
@@ -12,6 +12,9 @@ interface ContainerProps { }
 const SettingsPage: React.FC<ContainerProps> = () => {
   const { loggedIn } = useAuth();
   const [checked, setChecked] = useState(false);
+  const goBack = () => {
+    return window.history.back();
+  }
 
   if (!loggedIn) {
     return <Redirect to="/" />;
@@ -21,8 +24,9 @@ const SettingsPage: React.FC<ContainerProps> = () => {
     <IonPage>
     <IonHeader className="header ion-padding">
       <div className="grid">
-        <div className="header_title">
-          <IonTitle color="light" >Instellingen</IonTitle>
+        <div className="header_title settings">
+          <IonIcon icon={chevronBackOutline} onClick={goBack} />
+          <IonTitle color="light">Instellingen</IonTitle>
         </div>
       </div>
     </IonHeader>
