@@ -2,3 +2,7 @@
     font-family: "Antic Slab", serif;
     text-transform: none;
 }
+
+.button-solid {
+    --background: var(--ion-color-tertiary);
+}

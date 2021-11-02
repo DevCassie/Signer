@@ -71,8 +71,8 @@ ion-icon.icon_achievement {
     grid-column: 2 / 3;
 }
 
-.background_dark_blue {
-    background-color: #52BEBD;
+.background_dark_orange {
+    background-color: var(--ion-color-tertiary-shade);
     width: 25vw;
     height: 25vw;
     border-radius: 50%;
@@ -81,8 +81,8 @@ ion-icon.icon_achievement {
     justify-content: center; 
 }
 
-.background_light_blue {
-    background-color: #60E1E0;
+.background_light_orange {
+    background-color: var(--ion-color-tertiary);
     width: 20vw;
     height: 20vw;
     border-radius: 50%;

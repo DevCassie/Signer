@@ -1,4 +1,3 @@
-import { useRef, useState } from 'react';
 import { IonHeader, IonTitle, IonPage, IonContent, IonText, IonIcon, IonicSwiper } from '@ionic/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore from 'swiper';
@@ -54,8 +53,8 @@ const Achievementspage: React.FC<Achievementsprops> = () => {
             <div className="container page_content ion-padding">
               <div className="container grid align_top">
                 <Card className="flex column_1">
-                  <div className="background_dark_blue">
-                    <div className="background_light_blue">
+                  <div className="background_dark_orange">
+                    <div className="background_light_orange">
                       <IonIcon icon={trophy} className="icon_achievement" /> 
                     </div>
                   </div>
@@ -63,8 +62,8 @@ const Achievementspage: React.FC<Achievementsprops> = () => {
                   <IonText color="dark" className="secondary_font_family text_align_center">Je hebt je introductie<br />behaald!</IonText>
                 </Card>
                 <Card className="flex column_2">
-                  <div className="background_dark_blue">
-                    <div className="background_light_blue">
+                  <div className="background_dark_orange">
+                    <div className="background_light_orange">
                       <IonIcon icon={trophy} className="icon_achievement" /> 
                     </div>
                   </div> 
@@ -72,8 +71,8 @@ const Achievementspage: React.FC<Achievementsprops> = () => {
                   <IonText color="dark" className="secondary_font_family text_align_center">Je hebt je introductie<br />behaald!</IonText>
                 </Card>
                 <Card className="flex column_1">
-                  <div className="background_dark_blue">
-                    <div className="background_light_blue">
+                  <div className="background_dark_orange">
+                    <div className="background_light_orange">
                       <IonIcon icon={trophy} className="icon_achievement" /> 
                     </div>
                   </div>
@@ -81,26 +80,8 @@ const Achievementspage: React.FC<Achievementsprops> = () => {
                   <IonText color="dark" className="secondary_font_family text_align_center">Je hebt je introductie<br />behaald!</IonText>
                 </Card>
                 <Card className="flex column_2">
-                  <div className="background_dark_blue">
-                    <div className="background_light_blue">
-                      <IonIcon icon={trophy} className="icon_achievement" /> 
-                    </div>
-                  </div>
-                  <IonText color="dark" className="margin_bottom margin_top"><strong>Introductie</strong></IonText>
-                  <IonText color="dark" className="secondary_font_family text_align_center">Je hebt je introductie<br />behaald!</IonText>
-                </Card>
-                <Card className="flex column_1">
-                  <div className="background_dark_blue">
-                    <div className="background_light_blue">
-                      <IonIcon icon={trophy} className="icon_achievement" /> 
-                    </div>
-                  </div> 
-                  <IonText color="dark" className="margin_bottom margin_top"><strong>Introductie</strong></IonText>
-                  <IonText color="dark" className="secondary_font_family text_align_center">Je hebt je introductie<br />behaald!</IonText>
-                </Card>
-                <Card className="flex column_2">
-                  <div className="background_dark_blue">
-                    <div className="background_light_blue">
+                  <div className="background_dark_orange">
+                    <div className="background_light_orange">
                       <IonIcon icon={trophy} className="icon_achievement" /> 
                     </div>
                   </div>
@@ -108,8 +89,8 @@ const Achievementspage: React.FC<Achievementsprops> = () => {
                   <IonText color="dark" className="secondary_font_family text_align_center">Je hebt je introductie<br />behaald!</IonText>
                 </Card>
                 <Card className="flex column_1">
-                  <div className="background_dark_blue">
-                    <div className="background_light_blue">
+                  <div className="background_dark_orange">
+                    <div className="background_light_orange">
                       <IonIcon icon={trophy} className="icon_achievement" /> 
                     </div>
                   </div> 
@@ -117,8 +98,26 @@ const Achievementspage: React.FC<Achievementsprops> = () => {
                   <IonText color="dark" className="secondary_font_family text_align_center">Je hebt je introductie<br />behaald!</IonText>
                 </Card>
                 <Card className="flex column_2">
-                  <div className="background_dark_blue">
-                    <div className="background_light_blue">
+                  <div className="background_dark_orange">
+                    <div className="background_light_orange">
+                      <IonIcon icon={trophy} className="icon_achievement" /> 
+                    </div>
+                  </div>
+                  <IonText color="dark" className="margin_bottom margin_top"><strong>Introductie</strong></IonText>
+                  <IonText color="dark" className="secondary_font_family text_align_center">Je hebt je introductie<br />behaald!</IonText>
+                </Card>
+                <Card className="flex column_1">
+                  <div className="background_dark_orange">
+                    <div className="background_light_orange">
+                      <IonIcon icon={trophy} className="icon_achievement" /> 
+                    </div>
+                  </div> 
+                  <IonText color="dark" className="margin_bottom margin_top"><strong>Introductie</strong></IonText>
+                  <IonText color="dark" className="secondary_font_family text_align_center">Je hebt je introductie<br />behaald!</IonText>
+                </Card>
+                <Card className="flex column_2">
+                  <div className="background_dark_orange">
+                    <div className="background_light_orange">
                       <IonIcon icon={trophy} className="icon_achievement" /> 
                     </div>
                   </div>
